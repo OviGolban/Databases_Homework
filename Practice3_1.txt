@@ -1,0 +1,62 @@
+Homework Practice 3_1 made by Ovidiu Golban
+
+Vocabulary
+
+NOT = Inverts the value of the condition
+
+AND = Both conditions must be true for a record to be selected
+
+Precedence Rules = Rules that determine the order in which expressions are evaluat-ed and calculated
+
+OR = Either condition can be true for a record to be selected
+
+Try it/Solve it
+
+1. From the first the result is: 
+CODE	DESCRIPTION
+220	Carnival
+340	Footbal
+
+From the second the result is:	
+CODE	DESCRIPTION
+200	Tropical
+220	Carnival
+240	Sixties
+454	Eighties
+340	Football
+502	Fairy Tale
+
+In the first case SQL executes the first arithmetic operator '>' and with this result it
+does AND operation. 
+In the second case AQL evaluates arithmetic operator '>' and with this result
+it does OR operation. At or operation either condition can be true for a record to be selected,
+but at AND operation Both conditions must be true for a record to be selected.
+
+2) SELECT last_name
+   FROM f_staffs
+   WHERE last_name LIKE '%e%' AND last_name LIKE '%i%';
+
+3) SELECT first_name, last_name, staff_type
+   FROM f_staffs
+   WHERE salary > 6.50 AND staff_type NOT LIKE 'Order Taker';
+
+4)SELECT first_name, last_name
+  FROM employees
+  WHERE last_name LIKE 'D%' and last_name LIKE '%a%' and last_name LIKE '%e%'  ;
+
+5) SELECT address, loc_type
+   FROM d_venues
+   WHERE loc_type NOT LIKE 'Private Home';
+
+6) c. is in the correct order
+
+7)Diana Lorentz is the answer. 
+  SELECT first_name, last_name
+FROM employees
+WHERE hire_date >='01-May-1998' and  hire_date <= '01-June-1999' and salary < 8000 and last_name LIKE '%en%' ;
+
+8) MHARTSTE is the email.
+   SELECT first_name, last_name,email
+   FROM employees
+   WHERE hire_date >='01-Jan-1996' and salary > 9000 and commission_pct IS NULL ;
+   

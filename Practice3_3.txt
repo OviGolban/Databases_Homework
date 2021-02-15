@@ -1,0 +1,47 @@
+HOMEWORK -made by Ovidiu Golban
+Try it/Solve it
+1.
+ a. Single-row = Showing all of the email addresses in upper case letters
+ b. Multiple-row = Determining the average salary for the employees in the sales department
+ c. Multiple-row = Showing hire dates with the month spelled out (September 1, 2004)
+ d. Multiple row = Finding out the employees in each department that had the most seniority (the earliest
+hire date)
+ e. Single-row = Displaying the employees’ salaries rounded to the hundreds place
+ f. Single-row = Substituting zeros for null values when displaying employee commissions.
+
+2. AVG (in romanian) = reprezinta media, adica suma unor valori impartita la numarul lor
+   COUNT = numara cate valori de tipul pe care il numaram avem
+   MAX = gaseste valoarea maxima
+   MIN = gaseste valoarea minima 
+
+3. AVG:
+   SELECT AVG(salary)
+   FROM employees
+
+result: AVG(SALARY)
+        8775
+
+   COUNT:
+   SELECT COUNT(salary)
+   FROM employees
+
+result: COUNT(SALARY)
+        20
+
+    MAX:SELECT MAX(salary)
+	FROM employees
+result:MAX(SALARY)
+       24000
+
+min: SELECT MIN(salary)
+     FROM employees
+
+resut:MIN(SALARY)
+      2500
+
+sum:SELECT SUM(salary)
+    FROM employees
+
+result: SUM(SALARY)
+	175500
+   

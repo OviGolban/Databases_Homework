@@ -1,0 +1,49 @@
+Homework- Practice 2_2 made by Ovidiu Golban
+
+Vocabulary 
+
+Where clause = Restricts the rows returned by a select statement
+
+Comparision operators = Compares one expression to another value or expression
+
+1)SELECT first_name, last_name, address
+  FROM f_customers
+  WHERE id = 456;
+
+2) SELECT start_date, end_date
+   FROM f_promotional_menus
+   WHERE give_away = 'ballpen and highlighter';
+
+3)SELECT 'The '||year||' recordings in our database in The Celebrants Live in Concert' AS "Oldest"
+  FROM d_cds
+  WHERE year = (SELECT MIN(year) FROM d_cds);
+
+4)SELECT producer, title
+  FROM d_cds
+  WHERE title = 'Carpe Diem' ;
+
+5) SELECT title, year
+   FROM d_cds
+   WHERE year < 2000
+
+6)The correct answer is b. 0-4999
+
+7) SELECT studentno, fname, lname
+   FROM students
+   WHERE sex = 'F';
+
+8) SELECT studentno as "Student Number"
+   FROM students
+   WHERE major = 'PE';
+
+9) SELECT studentno, fname, lname, major
+   FROM students
+   WHERE sex = 'M';
+
+10) SELECT title, year
+    FROM d_cds
+    WHERE year <> 2000;
+
+11)SELECT *
+FROM f_staffs
+WHERE BIRTHDATE < '1-JAN-1980';

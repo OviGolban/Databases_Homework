@@ -1,0 +1,54 @@
+HOMEWORK PRACTICE 2_3 MADE BY OVIDIU GOLBAN
+
+VOCABULARY
+
+ESCAPE = This option identifies that the escape characters should be interpreted
+literally
+
+IS NULL = Condition tests for null values
+
+BETWEEN = Displays rows based on a range of values
+
+BETWEEN 1<= NUMBER AND NUMBER <=10 = Including the specified limits and the area between them; the numbers
+1-10, inclusive
+
+LIKE = Selects rows that match a character pattern 
+
+IN = Tests for values in a specified list of values
+
+TRY IT/SOLVE IT
+
+1)SELECT first_name, last_name, salary
+  FROM f_staffs
+  WHERE salary BETWEEN 5.00 and 10.00;
+
+2)SELECT loc_type, comments
+  FROM d_venues
+  WHERE loc_type LIKE 'Private Home';
+
+3)SELECT first_name, last_name
+  FROM f_staffs
+  WHERE salary > 20.00 AND SALARY < 60.00 OR salary =20.00 or salary = 60.00;
+
+4)SELECT producer,title
+ FROM d_cds
+ WHERE title LIKE '_a%';
+
+Optional I put the title to display for view if the answer is correct.
+
+5)SELECT last_name ||' '|| first_name||' '||auth_expense_amt AS "Partneres"
+ FROM d_partners
+ WHERE auth_expense_amt IS NOT NULL;
+
+6)SELECT last_name ||' '|| first_name AS "Possible Candidates"
+  FROM employees
+  WHERE last_name LIKE '%s';
+
+7) c.WHERE quantity IS NULL; is correct 
+
+8) SELECT title, type_code
+   FROM d_songs
+   WHERE type_code = 77 or type_code = 13 or type_code = 1;
+
+
+

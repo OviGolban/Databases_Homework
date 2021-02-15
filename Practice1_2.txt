@@ -1,0 +1,41 @@
+Homework Practice 1_2 - Relational Database Technology made by Ovidiu Golban
+
+Vocabulary
+
+row = An entry in a table, consisting of values for each appropriate column
+
+primary key = The set of mandatory columns within a table that is used to enforce uniqueness of rows, and that is normally the most frequent
+means by which rows are accessed
+
+table = An arrangement of data in rows and columns
+
+foreign key =  A column or set of columns that refers to a primary key in the same table or another table
+
+relational dB = Collections of objects or relations, set of operators to act on those relations, and data integrity for accuracy and consistency
+
+field = Intersection of a row and column
+
+data manipulation language (DML) = Used to modify the table data by entering, changing, or removing
+rows
+
+data definition language (DDL) = Creates, changes, and removes data structures from the data-base
+
+transaction control language (TCL) = Used to manage the changes made by DML statements
+
+data control language (DCL) = Used to give or remove access rights to the database and the structures within it
+
+Try it/Solve it
+
+1. 9 tables
+
+2. ? F_SHIFTS is related to the F_STAFFS through F_SHIFT_ASSIGMENTS  
+
+3. The names are: ID, FIRST_NAME , LAST_NAME , ADRESS , CITY , STATE , ZIP, PHONE_NUMBER . 
+
+4. F_PROMOTIONAL_MENUS has 2 rows. 
+
+5. Columns PROMO_CODE and REGULAR_CODE are foreign-key columns. The first table is F_PROMOTIONAL_MENUS with column CODE, and the second table is F_REGULAR_MENUS with column PROMO_CODE .
+
+6. I start with F_SHIFTS to F_REGULAR_MENUS. Steps are: f_shifts, f_assigments, f_staffs, f_orders, f_customers and then from f_orders to forder lines, f_food_items, f_promotional_menus, f_regular_menus .
+
+7. I searched manually and I find Nullable = "Yes" at Countries, Departments, D_Clients, D_Events, D_Job_Assigments, D_parteners, D_play_list_items, D_Songs, D_Venues, Employees, F_Food_Items, F_Orders, F_Promotional_Menus,F_Staffs ,HTMLDB_PLAN_TABLE,Job_Grades, Job_History, Locations, Region_Name, WF_COUNTRIES, WF_CURRENCIES, WE_SPOKEN_LANGUAGES,        

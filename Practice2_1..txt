@@ -1,0 +1,92 @@
+Homeworg Practice 2_1 
+Vocabulary
+
+DISTINCT = A command that suppresses duplicates
+
+Concatenation Operator (' || ') = Links two columns together to form one character data column
+
+Literal values = A group of character data
+
+DESCRIBE(or abrreviation is DESC) = An SQL plus command that displays the structure of a table
+
+Try it/Solve it
+1)SELECT DISTINCT last_name AS "Last_name ||' , mailing adress:'|| mailing_adress
+  FROM F_CUSTOMERS;
+
+2)a.SELECT first_name
+    FROM f_staffs;
+
+  b.SELECT first_name ||' ' || last_name AS "DJs on Demand Clients"
+    FROM d_clients;
+
+  c.SELECT DISTINCT quantity
+    FROM f_order_lines;
+
+  d.SELECT order_number
+    FROM f_orders;
+
+3) SELECT '***' ||first_name||' *** '||first_name||' ***' as "Super Star"
+   FROM f_staffs;
+
+4) SELECT first_name, DISTINCT birthdate
+  FROM f_staffs
+  D.No rows because distinct must be placed immediately after SELECT and in this case we have an error
+
+5)SELECT DISTINCT last_name AS "EMPLOYEE LAST NAME", salary as "CURRENT SALARY", salary+(0.05*salary) AS "SALARY WITH 5% RAISE"
+  FROM f_staffs;
+
+6) DESCRIBE employees;
+ Columns marked are "nullable" are:FIRST_NAME,PHONE_NUMBER,SALARY, COMMISSION_PCT, MANAGER_ID, DEPARTMENT_ID, BONUS. 
+ "Nullable" means that these columns accepts null value. 
+
+7) SELECT cd_number AS "Inventory Item", title AS "CD Title", producer as "Music Producer", year as "Year Purchased" 
+FROM D_CDs;
+
+8) True, tested in SQL commands.
+
+9)True, tested in SQL commands.
+
+10) SELECT employee_id, last_name,
+    salary * 12 "ANNUAL SALARY"
+    FROM employees;
+
+we don't have comma after "last_name", "x" is not operator for multiplication,
+"sal" doesn't exist, correct is salary, and we have " " at "ANNUAL SALARY"
+
+11) Multiplication is the first evaluated.
+
+12) SELECT b) * is the correct answer.
+
+13) b.projection is the correct answer.
+
+14) c. Employee is the correct answer
+
+15) b)SELECT salary* (6 + 100) is the correct answer.
+I try with a salary = 10 and I have the following results:
+a) 160 , b) 1060, c) 660, d) 610 and so the correct answer is b
+
+16) c) is the correct answer
+
+17) a)TRUE- we can write in SQL SELECT LAST_NAME or SELECT last_name, both is correct.
+    b)FALSE, I write SELECT and FROM on the separate lines.
+    c)TRUE, exception is DESCRIBE is a keyword and it can be abreviated at DESC
+    d)FALSE, Keyword in SQL are written in UPPERCASE.
+
+18) b and d are the correct answers, I tested in SQL commands.
+
+19) a. fails because keyword SELECT is not written correctly. 
+
+20)SELECT '+++' ||first_name||' +++ '||first_name||' +++' as "Super Star"
+   FROM f_staffs;
+
+javascript:sc_postSavedSQL('2495183916510485874','initial_superplus.sql','','SC','RO_A849_SQL_S15');
+
+
+
+
+ 
+
+
+
+
+

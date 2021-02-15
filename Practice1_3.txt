@@ -1,0 +1,69 @@
+Homework Practice 1_3 mede by Ovidiu Golban
+
+Vocabulary
+join = Display data from two or more related tables.
+
+arithmetic operator = A symbol used to perform an operation on some values.
+
+column = An implementation of an attribute or relationship in a table.
+
+projection = The capability in SQL to choose the columns in a table that you want returned from a query.
+
+NULL = A value that is unavailable, unassigned, unknown, or inapplicable.
+
+column alias = Renames a column heading.
+
+arithmetic expression = A mathematical equation.
+
+selection = The capability in SQL to choose the rows in a table returned from a query.
+
+select = Retrieves information from the database
+
+select clause = Specifies the columns to be displayed
+
+from clause = Specifies the table containing the column listed in the select clause
+
+SQL command = An individual SQL statement
+
+clause = Part of a SQL statement
+
+statment = A combination of the two clauses
+
+
+Try it/Solve it
+
+1. SELECT last_name
+   FROM university
+   WHERE last_name like 'Johnson';
+
+2. SELECT last_name AS "Client", email_adress AS "Email Address"
+   FROM d_client;
+
+3. SELECT last_name,ROUND(salary*1.05 +.50,2) as "Salary"
+FROM f_staffs;
+
+4. c. SELECT* is the easiest
+
+5.b.Payment = car_cost * 1.25 + 5.00 - (tax - license) I verify with a simple example:if carc_cost = 1000, license = 1, with firt formula payment = 1169 and with second formula payment = 1171
+
+6. Keywords are SELECT and FROM, Clause are: SELECT Clause:SELECT employee_id, last_name, 2) FROM Clause: FROM employees
+statment are:SELECT employee_id, last_name
+	     FROM employees
+
+7. SELECTION a.
+   JOIN b.
+   PROJECTION c.
+
+8.c. if you try do divide by NULL, the result is NULL or unknown
+  and so at multiplication we have some rule because division is the reverse of multiplication .
+ 
+9. I identify the example 1 at page 26 in PDF DP_1_3_SG and in concordance with that example, the answer is c.BEARS,COLOR,Age
+
+10.Words must be in SELECt statment are: SELECT and FROM
+
+
+
+
+
+
+
